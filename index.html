@@ -11,12 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-	function onSubmit(token) {
-	  document.getElementById("contact-form").submit();
-	}
-  </script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -26,6 +21,8 @@
 	  id="contact-form"
 	  action="https://formspree.io/mjvoewqd"
 	  method="POST"
+	  class="g-recaptcha"
+	  data-sitekey="6Ldd87AZAAAAALKLzUC-nViRBmmU-mf0_InEzEoC"
 	>
 
 	<div class="container-contact100">
@@ -58,10 +55,7 @@
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn g-recaptcha"
-					data-sitekey="6Lfb8LAZAAAAAMDHvfecxruprx-duZRPw_IugSBW" 
-					data-callback='onSubmit'
-					data-action='submit'>
+					<button class="contact100-form-btn">
 						<span>
 							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
 							Send
