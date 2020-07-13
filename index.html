@@ -14,7 +14,7 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
 	function onSubmit(token) {
-	  document.getElementById("container-contact100-form-btn").submit();
+	  document.getElementById("contact-form").submit();
 	}
   </script>
 </head>
@@ -23,6 +23,7 @@
 
 
 	<form
+	  id="contact-form"
 	  action="https://formspree.io/mjvoewqd"
 	  method="POST"
 	>
